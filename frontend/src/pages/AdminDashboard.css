@@ -1,0 +1,131 @@
+.admin-dashboard {
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.admin-header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, var(--accent-orange), var(--accent-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.admin-header p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.classes-section h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 32px;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.admin-classes-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.admin-class-card {
+  background: var(--secondary-bg);
+  border-radius: 12px;
+  padding: 24px;
+  border: 2px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.admin-class-card:hover {
+  border-color: var(--accent-orange);
+  box-shadow: var(--shadow);
+}
+
+.class-info h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.trainer {
+  color: var(--accent-green);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.class-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status.active {
+  background: var(--success);
+  color: white;
+}
+
+.status.cancelled {
+  background: var(--danger);
+  color: white;
+}
+
+.class-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.no-classes {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .admin-class-card {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .class-actions {
+    width: 100%;
+  }
+  
+  .class-actions .btn {
+    flex: 1;
+  }
+}
