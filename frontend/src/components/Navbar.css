@@ -1,0 +1,101 @@
+.navbar {
+    background: var(--secondary-bg);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.brand-text {
+    color: var(--text-primary);
+}
+
+.brand-accent {
+    color: var(--accent-red);
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-red);
+}
+
+.admin-link {
+    color: var(--accent-orange) !important;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.user-name {
+    font-weight: bold;
+    color: var(--text-primary);
+    font-size: 14px;
+}
+
+.user-role {
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.user-role.admin {
+    background: var(--accent-orange);
+    color: var(--primary-bg);
+}
+
+.user-role.user {
+    background: var(--accent-red);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        gap: 16px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .user-info {
+        display: none;
+    }
+}
