@@ -1,0 +1,82 @@
+.create-class-page {
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.create-class-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.create-class-header h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, var(--accent-orange), var(--accent-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.create-class-header p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.create-class-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.create-class-form {
+  background: var(--secondary-bg);
+  border-radius: 16px;
+  padding: 40px;
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.form-actions .btn {
+  min-width: 120px;
+}
+
+@media (max-width: 768px) {
+  .create-class-form {
+    padding: 24px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .form-actions .btn {
+    width: 100%;
+  }
+}
