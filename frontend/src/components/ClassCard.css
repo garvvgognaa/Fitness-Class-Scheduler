@@ -1,0 +1,126 @@
+.class-card {
+    background: var(--secondary-bg);
+    border-radius: 16px;
+    padding: 24px;
+    border: 2px solid var(--border);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.class-card:active {
+    transform: scale(0.98);
+}
+
+.class-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-red), var(--accent-orange));
+}
+
+.class-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 64px rgba(220, 38, 38, 0.2);
+    border-color: var(--accent-red);
+}
+
+.class-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.class-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.class-trainer {
+    margin-bottom: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.trainer-label {
+    color: var(--text-secondary);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 8px;
+}
+
+.trainer-name {
+    color: var(--accent-red);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.class-details {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.detail-icon {
+    font-size: 16px;
+}
+
+.class-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.class-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.class-actions .btn {
+    flex: 1;
+    min-width: 120px;
+}
+
+.btn-success {
+    background: var(--success);
+    color: white;
+}
+
+.btn-success:hover {
+    background: #27ae60;
+}
+
+@media (max-width: 768px) {
+    .class-details {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .class-actions {
+        flex-direction: column;
+    }
+
+    .class-actions .btn {
+        flex: none;
+    }
+}
