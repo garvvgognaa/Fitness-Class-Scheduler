@@ -17,13 +17,14 @@ const PORT = process.env.PORT || 5000;
 // Connect to database
 connectDB();
 
-// Middleware
+// CORS setup
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? 'https://your-frontend-domain.com' 
+  origin: process.env.NODE_ENV === 'production'
+    ? process.env.CLIENT_URL   // Your Vercel frontend URL
     : 'http://localhost:3000',
   credentials: true
 }));
+
 app.use(express.json());
 
 // Routes
