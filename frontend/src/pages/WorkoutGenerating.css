@@ -1,0 +1,275 @@
+.workout-generating-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary-bg) 100%);
+  }
+  
+  .generating-content {
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  .generating-animation {
+    margin-bottom: 48px;
+  }
+  
+  .pulse-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    animation: pulse-glow 2s infinite;
+    position: relative;
+  }
+  
+  .pulse-circle::before {
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));
+    opacity: 0.3;
+    animation: pulse-outer 2s infinite;
+  }
+  
+  .inner-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--primary-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .inner-circle .icon {
+    font-size: 2.5rem;
+    animation: bounce 1s infinite;
+  }
+  
+  .generating-content h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 48px;
+    background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .progress-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+  
+  .progress-step {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    opacity: 0.3;
+    transition: all 0.5s ease;
+  }
+  
+  .progress-step.active {
+    opacity: 1;
+  }
+  
+  .progress-step.current {
+    transform: scale(1.05);
+  }
+  
+  .step-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--border);
+    transition: all 0.5s ease;
+  }
+  
+  .progress-step.active .step-dot {
+    background: var(--accent-red);
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
+  }
+  
+  .progress-step.current .step-dot {
+    animation: pulse-dot 1s infinite;
+  }
+  
+  .step-text {
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .progress-step.active .step-text {
+    color: var(--text-primary);
+  }
+  
+  .progress-step.current .step-text {
+    color: var(--accent-red);
+  }
+  
+  .success-message {
+    animation: fadeInUp 0.8s ease;
+  }
+  
+  .success-icon {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    animation: bounce 1s infinite;
+  }
+  
+  .success-message p {
+    font-size: 1.2rem;
+    color: var(--accent-red);
+    font-weight: bold;
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+  
+  @keyframes pulse-outer {
+    0% { transform: scale(1); opacity: 0.3; }
+    50% { transform: scale(1.2); opacity: 0.1; }
+    100% { transform: scale(1.4); opacity: 0; }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes pulse-dot {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .generated-plan {
+    animation: fadeInUp 0.8s ease;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .plan-header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .plan-header h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--accent-red);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  
+  .plan-header p {
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  
+  .plan-days {
+    display: grid;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  
+  .plan-day {
+    background: var(--secondary-bg);
+    border-radius: 12px;
+    padding: 20px;
+    border: 2px solid var(--border);
+  }
+  
+  .plan-day h3 {
+    color: var(--accent-red);
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+  
+  .exercises {
+    display: grid;
+    gap: 12px;
+  }
+  
+  .exercise {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .exercise:last-child {
+    border-bottom: none;
+  }
+  
+  .exercise-name {
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+  
+  .exercise-details {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    .generating-content h1 {
+      font-size: 2rem;
+    }
+    
+    .progress-steps {
+      gap: 16px;
+    }
+    
+    .step-text {
+      font-size: 14px;
+    }
+    
+    .plan-days {
+      gap: 16px;
+    }
+    
+    .plan-day {
+      padding: 16px;
+    }
+    
+    .exercise {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+  }
