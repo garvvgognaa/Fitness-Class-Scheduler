@@ -171,9 +171,7 @@
 }
 
 .workout-type-btn .icon {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 8px;
+  display: none;
 }
 
 .stats-inputs {
@@ -221,9 +219,7 @@
 }
 
 .welcome-icon {
-  font-size: 4rem;
-  margin-bottom: 24px;
-  animation: bounce 2s infinite;
+  display: none;
 }
 
 .welcome-screen h2 {
@@ -273,9 +269,7 @@
 }
 
 .goal-btn .icon {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 8px;
+  display: none;
 }
 
 @keyframes fadeInUp {

@@ -45,7 +45,7 @@ const WorkoutDetail = () => {
       <div className="container">
         <div className="workout-detail-header">
           <button onClick={() => navigate('/my-workouts')} className="back-btn">
-            ← Back to Workouts
+            Back to Workouts
           </button>
           <h1>{workout.planStructure}</h1>
           <div className="workout-meta">

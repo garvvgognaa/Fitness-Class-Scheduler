@@ -51,9 +51,8 @@
     z-index: 2;
   }
   
-  .inner-circle .icon {
-    font-size: 2.5rem;
-    animation: bounce 1s infinite;
+.inner-circle .icon {
+    display: none;
   }
   
   .generating-content h1 {
@@ -126,10 +125,8 @@
     animation: fadeInUp 0.8s ease;
   }
   
-  .success-icon {
-    font-size: 3rem;
-    margin-bottom: 16px;
-    animation: bounce 1s infinite;
+.success-icon {
+    display: none;
   }
   
   .success-message p {

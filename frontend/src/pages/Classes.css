@@ -83,9 +83,7 @@
 }
 
 .no-classes-icon {
-  font-size: 4rem;
-  margin-bottom: 24px;
-  opacity: 0.5;
+  display: none;
 }
 
 .no-classes h3 {

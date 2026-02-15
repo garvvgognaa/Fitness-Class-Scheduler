@@ -128,10 +128,8 @@
     color: var(--text-secondary);
   }
   
-  .no-workouts-icon {
-    font-size: 4rem;
-    margin-bottom: 24px;
-    opacity: 0.5;
+.no-workouts-icon {
+    display: none;
   }
   
   .no-workouts h3 {
