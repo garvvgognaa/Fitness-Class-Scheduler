@@ -63,7 +63,7 @@ const ClassCard = ({ fitnessClass, showBookButton = false, onBook, userBookings 
             disabled={isFull || isBooked}
             className={`btn ${isBooked ? 'btn-success' : 'btn-primary'}`}
           >
-            {isBooked ? 'Booked ✓' : isFull ? 'Full' : 'Book Now'}
+            {isBooked ? 'Booked' : isFull ? 'Full' : 'Book Now'}
           </button>
         )}
       </div>

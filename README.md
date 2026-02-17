@@ -2,7 +2,7 @@
 
 A full-stack web application for managing fitness class bookings with a bold, motivational UI designed to inspire users to achieve their fitness goals.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React 18** with Vite for fast development
@@ -22,7 +22,7 @@ A full-stack web application for managing fitness class bookings with a bold, mo
 - **MongoDB Atlas** (Cloud database)
 - Collections: Users, FitnessClasses, Bookings
 
-## 🎯 Features
+## Features
 
 ### User Features
 - **User Registration & Login** with JWT authentication
@@ -46,7 +46,7 @@ A full-stack web application for managing fitness class bookings with a bold, mo
 - **Error Handling** with user-friendly messages
 - **Loading States** for better UX
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 Fitness-Class-Scheduler/
@@ -101,7 +101,7 @@ Fitness-Class-Scheduler/
     └── .env
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js (v16 or higher)
@@ -138,7 +138,7 @@ npm run dev
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:5000
 
-## 🔐 Environment Variables
+## Environment Variables
 
 ### Backend (.env)
 ```env
@@ -153,7 +153,7 @@ NODE_ENV=development
 VITE_API_BASE_URL=http://localhost:5000/api
 ```
 
-## 📚 API Documentation
+## API Documentation
 
 ### Authentication Routes
 - `POST /api/auth/register` - Register new user
@@ -219,7 +219,7 @@ Authorization: Bearer <jwt_token>
 }
 ```
 
-## 👥 Test Users
+## Test Users
 
 ### Admin User
 - **Email:** admin@fitclass.com
@@ -233,7 +233,7 @@ Authorization: Bearer <jwt_token>
 
 *Note: Create these users through the registration form or seed them manually in the database.*
 
-## 🎨 UI Design Features
+## UI Design Features
 
 ### Bold Motivational Theme
 - **Dark Background** (#0a0a0a) with neon accent colors
@@ -257,7 +257,7 @@ Authorization: Bearer <jwt_token>
 - Touch-friendly buttons
 - Optimized for all screen sizes
 
-## 🚀 Deployment
+## Deployment
 
 ### Frontend (Vercel/Netlify)
 1. Build the project: `npm run build`
@@ -275,7 +275,7 @@ Authorization: Bearer <jwt_token>
 - Set secure JWT secret
 - Enable HTTPS
 
-## 🔧 Development Scripts
+## Development Scripts
 
 ### Backend
 ```bash
@@ -290,7 +290,7 @@ npm run build      # Build for production
 npm run preview    # Preview production build
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -311,11 +311,11 @@ npm run preview    # Preview production build
    - Delete `node_modules` and reinstall
    - Check Node.js version compatibility
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License.
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -325,4 +325,4 @@ This project is licensed under the MIT License.
 
 ---
 
-**Ready to transform your fitness journey? Start booking classes today! 💪**
+**Ready to transform your fitness journey? Start booking classes today!**
