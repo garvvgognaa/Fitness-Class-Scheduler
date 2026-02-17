@@ -40,15 +40,12 @@ const ClassCard = ({ fitnessClass, showBookButton = false, onBook, userBookings 
       
       <div className="class-details">
         <div className="detail-item">
-          <span className="detail-icon">📅</span>
           <span>{formatDate(fitnessClass.date)}</span>
         </div>
         <div className="detail-item">
-          <span className="detail-icon">⏰</span>
           <span>{fitnessClass.time}</span>
         </div>
         <div className="detail-item">
-          <span className="detail-icon">⏱️</span>
           <span>{fitnessClass.duration} min</span>
         </div>
       </div>

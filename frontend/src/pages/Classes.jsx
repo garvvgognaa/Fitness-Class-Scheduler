@@ -98,7 +98,6 @@ const Classes = () => {
 
         {classes.length === 0 ? (
           <div className="no-classes">
-            <div className="no-classes-icon">🏋️</div>
             <h3>No classes found</h3>
             <p>Check back later for new classes or try a different filter</p>
           </div>

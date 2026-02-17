@@ -57,7 +57,6 @@ const WorkoutGenerating = () => {
           <div className="generating-animation">
             <div className="pulse-circle">
               <div className="inner-circle">
-                <span className="icon">💪</span>
               </div>
             </div>
           </div>
@@ -78,14 +77,12 @@ const WorkoutGenerating = () => {
           
           {step === steps.length - 1 && !generatedPlan && loading && (
             <div className="success-message">
-              <div className="success-icon">🎉</div>
               <p>Welcome to your fitness journey!</p>
             </div>
           )}
           
           {step === steps.length - 1 && !loading && (
             <div className="success-message">
-              <div className="success-icon">✅</div>
               <h2>Your Workout Plan is Ready!</h2>
               <p>Plan generated successfully</p>
               <button 

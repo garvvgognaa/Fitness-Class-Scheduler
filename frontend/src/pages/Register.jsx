@@ -100,7 +100,6 @@ const Register = () => {
         {showWelcome ? (
           <div className="welcome-screen">
             <div className="welcome-animation">
-              <div className="welcome-icon">🎉</div>
               <h2>Welcome, {formData.name}!</h2>
               <p>Let's create your perfect workout plan...</p>
             </div>
@@ -178,14 +177,12 @@ const Register = () => {
                   className={`workout-type-btn ${formData.workoutType === 'bodyweight' ? 'active' : ''}`}
                   onClick={() => setFormData({...formData, workoutType: 'bodyweight'})}
                 >
-                  <span className="icon">💪</span>
                   <div>Bodyweight</div>
                 </button>
                 <button
                   className={`workout-type-btn ${formData.workoutType === 'gym' ? 'active' : ''}`}
                   onClick={() => setFormData({...formData, workoutType: 'gym'})}
                 >
-                  <span className="icon">🏋️</span>
                   <div>Gym</div>
                 </button>
               </div>
@@ -266,21 +263,18 @@ const Register = () => {
                   className={`goal-btn ${formData.goal === 'lose-weight' ? 'active' : ''}`}
                   onClick={() => setFormData({...formData, goal: 'lose-weight'})}
                 >
-                  <span className="icon">🔥</span>
                   <div>Lose Weight</div>
                 </button>
                 <button
                   className={`goal-btn ${formData.goal === 'build-muscle' ? 'active' : ''}`}
                   onClick={() => setFormData({...formData, goal: 'build-muscle'})}
                 >
-                  <span className="icon">💪</span>
                   <div>Build Muscle</div>
                 </button>
                 <button
                   className={`goal-btn ${formData.goal === 'stay-fit' ? 'active' : ''}`}
                   onClick={() => setFormData({...formData, goal: 'stay-fit'})}
                 >
-                  <span className="icon">⚡</span>
                   <div>Stay Fit</div>
                 </button>
               </div>

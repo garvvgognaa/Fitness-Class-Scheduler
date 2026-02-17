@@ -60,7 +60,6 @@ const CreateWorkout = () => {
                   className={`workout-type-btn ${formData.workoutType === 'bodyweight' ? 'active' : ''}`}
                   onClick={() => setFormData({...formData, workoutType: 'bodyweight'})}
                 >
-                  <span className="icon">💪</span>
                   <h3>Bodyweight Workout</h3>
                   <p>No equipment needed</p>
                 </button>
@@ -68,7 +67,6 @@ const CreateWorkout = () => {
                   className={`workout-type-btn ${formData.workoutType === 'gym' ? 'active' : ''}`}
                   onClick={() => setFormData({...formData, workoutType: 'gym'})}
                 >
-                  <span className="icon">🏋️</span>
                   <h3>Gym Workout</h3>
                   <p>Full gym equipment</p>
                 </button>

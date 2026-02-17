@@ -129,7 +129,6 @@ const Bookings = () => {
             <div className="bookings-section">
               {bookings.upcoming.length === 0 ? (
                 <div className="no-bookings">
-                  <div className="no-bookings-icon">📅</div>
                   <h3>No upcoming classes</h3>
                   <p>Ready to book your next workout?</p>
                   <Link to="/classes" className="btn btn-primary">
@@ -154,7 +153,6 @@ const Bookings = () => {
             <div className="bookings-section">
               {bookings.past.length === 0 ? (
                 <div className="no-bookings">
-                  <div className="no-bookings-icon">🏆</div>
                   <h3>No past classes</h3>
                   <p>Start your fitness journey today!</p>
                   <Link to="/classes" className="btn btn-primary">

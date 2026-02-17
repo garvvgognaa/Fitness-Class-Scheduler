@@ -90,7 +90,6 @@ const Dashboard = () => {
         <div className="dashboard-content">
           <div className="stats-grid">
             <div className="stat-card">
-              <div className="stat-icon">🔥</div>
               <div className="stat-info">
                 <h3>{stats.upcomingBookings}</h3>
                 <p>Upcoming Classes</p>
@@ -98,7 +97,6 @@ const Dashboard = () => {
             </div>
             
             <div className="stat-card">
-              <div className="stat-icon">💪</div>
               <div className="stat-info">
                 <h3>{stats.totalBookings}</h3>
                 <p>Total Bookings</p>
@@ -106,7 +104,6 @@ const Dashboard = () => {
             </div>
             
             <div className="stat-card">
-              <div className="stat-icon">⭐</div>
               <div className="stat-info">
                 <h3>{user?.role}</h3>
                 <p>Member Status</p>
@@ -142,32 +139,27 @@ const Dashboard = () => {
             <h2>Quick Actions</h2>
             <div className="action-grid">
               <Link to="/classes" className="action-card">
-                <div className="action-icon">🏋️</div>
                 <h3>Browse Classes</h3>
                 <p>Find your next workout</p>
               </Link>
               
               <Link to="/bookings" className="action-card">
-                <div className="action-icon">📅</div>
                 <h3>My Schedule</h3>
                 <p>Manage your bookings</p>
               </Link>
               
               <Link to="/create-workout" className="action-card">
-                <div className="action-icon">💪</div>
                 <h3>Personal Workout</h3>
                 <p>Create custom plan</p>
               </Link>
               
               <Link to="/my-workouts" className="action-card">
-                <div className="action-icon">📋</div>
                 <h3>My Workouts</h3>
                 <p>View your plans</p>
               </Link>
               
               {user?.role === 'admin' && (
                 <Link to="/admin" className="action-card admin-card">
-                  <div className="action-icon">⚙️</div>
                   <h3>Admin Panel</h3>
                   <p>Manage classes</p>
                 </Link>
@@ -177,7 +169,6 @@ const Dashboard = () => {
           
           <div className="community-stats">
             <div className="community-card">
-              <div className="community-icon">👥</div>
               <div className="community-info">
                 <h3>{stats.totalUsers}</h3>
                 <p>Members Joined</p>

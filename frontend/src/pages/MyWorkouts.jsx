@@ -50,7 +50,6 @@ const MyWorkouts = () => {
 
         {workouts.length === 0 ? (
           <div className="no-workouts">
-            <div className="no-workouts-icon">💪</div>
             <h3>No workout plans yet</h3>
             <p>Create your first personalized workout plan</p>
             <Link to="/create-workout" className="btn btn-primary">
