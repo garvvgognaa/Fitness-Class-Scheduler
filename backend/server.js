@@ -22,7 +22,7 @@ app.use(cors({
   origin: process.env.NODE_ENV === 'production'
     ? process.env.CLIENT_URL   // Your Vercel frontend URL
     : 'http://localhost:3000',
-    "https://fitness-class-scheduler.vercel.app",
+  
   credentials: true
 }));
 

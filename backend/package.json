@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "kill-port": "lsof -ti:5000 | xargs kill -9 2>/dev/null || true"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
